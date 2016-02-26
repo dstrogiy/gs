@@ -41,4 +41,35 @@ var timeToWaitForLast = 100;
 */
 jQuery(document).ready(function($) {
 
+
+
+// init Isotope
+var $grid = $('.country-grid').isotope({
+  itemSelector: '.country-item'
+});
+  
+// store filter for each group
+var filters = [];
+
+$('.grid-control').on( 'click', '.checkbox', function() {
+  var $this = $(this);
+  var newFilter = $this.attr('data-filter');
+  var found = $.inArray(newFilter, filters);
+  
+  if (found >= 0) {
+    // Element was found, remove it.
+    filters.splice(found, 1);
+  } else {
+    // Element was not found, add it.
+    filters.push(newFilter);
+  }
+  var filtersToString = filters + "";
+  
+  $grid.isotope({ filter: filtersToString });
+  $this.toggleClass('is-checked');
+});
+
+
+
+
 }); /* end of as page load scripts */
