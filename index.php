@@ -108,6 +108,26 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">France: <span class="number">1,935</span></p>
     <p class="country-month">January</p>
   </div>
+  <div class="country-item germany february">
+    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
+    <p class="country-name">Germany: <span class="number">11,300</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item hungary february">
+    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">11,400</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item italy march">
+    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
+    <p class="country-name">Italy: <span class="number">4,400</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item sweden july">
+    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">1,400</span></p>
+    <p class="country-month">July</p>
+  </div>
 </div>
 
 
