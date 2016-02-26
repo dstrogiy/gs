@@ -8,26 +8,116 @@
 
 get_template_part( 'library/templates/the-header' );
 
-	if ( ! have_posts() ) :
-		get_template_part( 'library/templates/not-found' );
-	endif;
+  if ( ! have_posts() ) :
+    get_template_part( 'library/templates/not-found' );
+  endif;
 
-	while ( have_posts() ) : the_post(); ?>
+  while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<header class="article-header">
-				<h2 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			</header>
 
-			<section class="entry-content">
-				<?php the_content(); ?>
-			</section>
 
-		</article>
+<div class="grid-control countries-control" data-filter-group="country">
+  <p class="control-title"><strong>Countries</strong></p>
+  <span class="checkbox" data-filter=".austria">Austria <em class="check"></em></span>
+  <span class="checkbox" data-filter=".france">France <em class="check"></em></span>
+  <span class="checkbox" data-filter=".germany">Germany <em class="check"></em></span>
+  <span class="checkbox" data-filter=".hungary">Hungary <em class="check"></em></span>
+  <span class="checkbox" data-filter=".italy">Italy <em class="check"></em></span>
+  <span class="checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
 
-	<?php endwhile; ?>
+  <div class="filter-area">
+    <span class="filter filter-alpha"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter filter-size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
+  </div>
+</div>
 
-	<?php bones_page_navi(); ?>
+<div class="grid-control months-control" data-filter-group="month">
+  <p class="control-title"><strong>Months</strong></p>
+  <span class="checkbox" data-filter=".january">January <em class="check"></em></span>
+  <span class="checkbox" data-filter=".february">February <em class="check"></em></span>
+  <span class="checkbox" data-filter=".march">March <em class="check"></em></span>
+  <span class="checkbox" data-filter=".april">April <em class="check"></em></span>
+  <span class="checkbox" data-filter=".may">May <em class="check"></em></span>
+  <span class="checkbox" data-filter=".june">June <em class="check"></em></span>
+  <span class="checkbox" data-filter=".july">July <em class="check"></em></span>
+  <span class="checkbox" data-filter=".august">August <em class="check"></em></span>
+  <span class="checkbox" data-filter=".september">September <em class="check"></em></span>
+  <span class="checkbox" data-filter=".october">October <em class="check"></em></span>
+
+  <div class="filter-area">
+    <span class="filter filter-select-all"><em>Select all</em> <div class="filter-checkbox"></div></span>
+    <span class="filter filter-organize"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
+  </div>
+</div>
+
+<div class="country-grid">
+  <div class="country-item austria january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-jan.svg" /></div>
+    <p class="country-name">Austria: <span class="number">3,845</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item austria february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-feb.svg" /></div>
+    <p class="country-name">Austria: <span class="number">2,685</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item austria march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-mar.svg" /></div>
+    <p class="country-name">Austria: <span class="number">2,350</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item austria april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-apr.svg" /></div>
+    <p class="country-name">Austria: <span class="number">3,170</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item austria may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-may.svg" /></div>
+    <p class="country-name">Austria: <span class="number">5,525</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item austria june">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-jun.svg" /></div>
+    <p class="country-name">Austria: <span class="number">6,715</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item austria july">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-jul.svg" /></div>
+    <p class="country-name">Austria: <span class="number">7,705</span></p>
+    <p class="country-month">July</p>
+  </div>
+  <div class="country-item austria august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-aug.svg" /></div>
+    <p class="country-name">Austria: <span class="number">11,410</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item austria september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-sep.svg" /></div>
+    <p class="country-name">Austria: <span class="number">7,610</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item austria october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/aus-sep.svg" /></div>
+    <p class="country-name">Austria: <span class="number">9,970</span></p>
+    <p class="country-month">October</p>
+  </div>
+  <div class="country-item france january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-jan.svg" /></div>
+    <p class="country-name">France: <span class="number">1,935</span></p>
+    <p class="country-month">January</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+</article> <?php // end article ?>
+
+  <?php endwhile; ?>
 
 <?php get_template_part( 'library/templates/the-footer' );
