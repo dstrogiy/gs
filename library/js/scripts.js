@@ -81,6 +81,9 @@ $('.grid-control').on( 'click', '.checkbox', function() {
 
   $grid.isotope({ filter: comboFilter });
   $this.toggleClass('is-checked');
+  if ( isAll ) {
+    $this.parents('.grid-control').children().addClass('is-checked');
+  }
 });
 
 
