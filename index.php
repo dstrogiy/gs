@@ -48,7 +48,7 @@ get_template_part( 'library/templates/the-header' );
 
   <div class="filter-area">
     <span class="filter filter-select-all"><em>Select all</em> <div class="checkbox" data-filter="all"></div></span>
-    <span class="filter filter-organize"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
+    <span class="filter sort-month" data-sort-value="month"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
   </div>
 </div>
 

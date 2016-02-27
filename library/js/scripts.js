@@ -54,7 +54,8 @@ var $grid = $('.country-grid').isotope({
     size: function( itemElem ) {
       var size = $('.number', itemElem).text();
       return Number(size.replace(/[^\d\.\-]/g, ""));
-    }
+    },
+    month: '.country-month'
   }
 });
   
@@ -96,7 +97,7 @@ $('.grid-control').on( 'click', '.checkbox', function() {
   }
 });
 
-$('.sort-name, .sort-size').click(function(e) {
+$('.sort-name, .sort-size, .sort-month').click(function(e) {
   var sortValue = $(this).attr('data-sort-value');
   var isReversed = $(this).hasClass('sort-reverse');
   $grid.isotope({ sortBy: sortValue, sortAscending: isReversed });
