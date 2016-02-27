@@ -29,7 +29,7 @@ get_template_part( 'library/templates/the-header' );
 
   <div class="filter-area">
     <span class="filter sort-name" data-sort-value="name"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
-    <span class="filter filter-size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-size" data-sort-value="size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
   </div>
 </div>
 

@@ -50,6 +50,10 @@ var $grid = $('.country-grid').isotope({
     name: function( itemElem ) {
       var name = $('.country-name', itemElem).text();
       return name.replace(/[^a-zA-Z]+/g, '');
+    },
+    size: function( itemElem ) {
+      var size = $('.number', itemElem).text();
+      return Number(size.replace(/[^\d\.\-]/g, ""));
     }
   }
 });
@@ -92,10 +96,9 @@ $('.grid-control').on( 'click', '.checkbox', function() {
   }
 });
 
-$('.sort-name').click(function(e) {
+$('.sort-name, .sort-size').click(function(e) {
   var sortValue = $(this).attr('data-sort-value');
   var isReversed = $(this).hasClass('sort-reverse');
-
   $grid.isotope({ sortBy: sortValue, sortAscending: isReversed });
   $(this).toggleClass('sort-reverse');
 });
