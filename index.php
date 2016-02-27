@@ -303,6 +303,56 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">Italy: <span class="number">8,575</span></p>
     <p class="country-month">October</p>
   </div>
+  <div class="country-item sweden january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-jan.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">3,315</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item sweden february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-feb.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">2,585</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item sweden march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-mar.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">2,495</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item sweden april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-apr.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">2,535</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item sweden may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-may.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">3,870</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item sweden june">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-jun.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">4,840</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item sweden july">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-jul.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">6,205</span></p>
+    <p class="country-month">July</p>
+  </div>
+  <div class="country-item sweden august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-aug.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">9,965</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item sweden september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-sep.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">22,060</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item sweden october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-oct.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">36,455</span></p>
+    <p class="country-month">October</p>
+  </div>
 </div>
 
 
