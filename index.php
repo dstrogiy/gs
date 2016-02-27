@@ -153,6 +153,56 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">France: <span class="number">4,090</span></p>
     <p class="country-month">October</p>
   </div>
+  <div class="country-item germany january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-jan.svg" /></div>
+    <p class="country-name">Germany: <span class="number">16,915</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item germany february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-feb.svg" /></div>
+    <p class="country-name">Germany: <span class="number">18,770</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item germany march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-mar.svg" /></div>
+    <p class="country-name">Germany: <span class="number">23,500</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item germany april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-apr.svg" /></div>
+    <p class="country-name">Germany: <span class="number">20,000</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item germany may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-may.svg" /></div>
+    <p class="country-name">Germany: <span class="number">18,530</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item germany june">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-jun.svg" /></div>
+    <p class="country-name">Germany: <span class="number">24,330</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item germany july">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-jul.svg" /></div>
+    <p class="country-name">Germany: <span class="number">28,570</span></p>
+    <p class="country-month">July</p>
+  </div>
+  <div class="country-item germany august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-aug.svg" /></div>
+    <p class="country-name">Germany: <span class="number">29,705</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item germany september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-sep.svg" /></div>
+    <p class="country-name">Germany: <span class="number">37,020</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item germany october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ger-oct.svg" /></div>
+    <p class="country-name">Germany: <span class="number">50,060</span></p>
+    <p class="country-month">October</p>
+  </div>
 </div>
 
 
