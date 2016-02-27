@@ -28,7 +28,7 @@ get_template_part( 'library/templates/the-header' );
   <span class="checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
 
   <div class="filter-area">
-    <span class="filter filter-alpha"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-name" data-sort-value="name"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
     <span class="filter filter-size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
   </div>
 </div>

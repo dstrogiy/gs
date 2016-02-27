@@ -45,7 +45,13 @@ jQuery(document).ready(function($) {
 
 // init Isotope
 var $grid = $('.country-grid').isotope({
-  itemSelector: '.country-item'
+  itemSelector: '.country-item',
+  getSortData: {
+    name: function( itemElem ) {
+      var name = $('.country-name', itemElem).text();
+      return name.replace(/[^a-zA-Z]+/g, '');
+    }
+  }
 });
   
 // store filter for each group
@@ -84,6 +90,14 @@ $('.grid-control').on( 'click', '.checkbox', function() {
   if ( isAll ) {
     $this.parents('.grid-control').children().addClass('is-checked');
   }
+});
+
+$('.sort-name').click(function(e) {
+  var sortValue = $(this).attr('data-sort-value');
+  var isReversed = $(this).hasClass('sort-reverse');
+
+  $grid.isotope({ sortBy: sortValue, sortAscending: isReversed });
+  $(this).toggleClass('sort-reverse');
 });
 
 
