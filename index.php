@@ -303,6 +303,16 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">Italy: <span class="number">8,575</span></p>
     <p class="country-month">October</p>
   </div>
+  <div class="country-item sweden january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-jan.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">3,315</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item sweden february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/swe-feb.svg" /></div>
+    <p class="country-name">Sweden: <span class="number">2,585</span></p>
+    <p class="country-month">February</p>
+  </div>
 </div>
 
 
