@@ -28,8 +28,8 @@ get_template_part( 'library/templates/the-header' );
   <span class="checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
 
   <div class="filter-area">
-    <span class="filter filter-alpha"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
-    <span class="filter filter-size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-name" data-sort-value="name"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-size" data-sort-value="size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
   </div>
 </div>
 
@@ -48,7 +48,7 @@ get_template_part( 'library/templates/the-header' );
 
   <div class="filter-area">
     <span class="filter filter-select-all"><em>Select all</em> <div class="checkbox" data-filter="all"></div></span>
-    <span class="filter filter-organize"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
+    <span class="filter sort-month" data-sort-value="month"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
   </div>
 </div>
 
