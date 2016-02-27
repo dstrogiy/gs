@@ -203,6 +203,106 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">Germany: <span class="number">50,060</span></p>
     <p class="country-month">October</p>
   </div>
+  <div class="country-item hungary january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-jan.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">11,920</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item hungary february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-feb.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">15,835</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item hungary march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-mar.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">4,225</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item hungary april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-apr.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">5,740</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item hungary may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-may.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">8,870</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item hungary june">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-jun.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">14,965</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item hungary july">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-jul.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">29,095</span></p>
+    <p class="country-month">July</p>
+  </div>
+  <div class="country-item hungary august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-aug.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">44,325</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item hungary september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-sep.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">29,940</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item hungary october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/hun-oct.svg" /></div>
+    <p class="country-name">Hungary: <span class="number">430</span></p>
+    <p class="country-month">October</p>
+  </div>
+  <div class="country-item italy january">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-jan.svg" /></div>
+    <p class="country-name">Italy: <span class="number">3,880</span></p>
+    <p class="country-month">January</p>
+  </div>
+  <div class="country-item italy february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-feb.svg" /></div>
+    <p class="country-name">Italy: <span class="number">4,140</span></p>
+    <p class="country-month">February</p>
+  </div>
+  <div class="country-item italy march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-mar.svg" /></div>
+    <p class="country-name">Italy: <span class="number">4,835</span></p>
+    <p class="country-month">March</p>
+  </div>
+  <div class="country-item italy april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-apr.svg" /></div>
+    <p class="country-name">Italy: <span class="number">3,615</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item italy may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-may.svg" /></div>
+    <p class="country-name">Italy: <span class="number">4,305</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item italy jun">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-jun.svg" /></div>
+    <p class="country-name">Italy: <span class="number">4,405</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item italy jul">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-jul.svg" /></div>
+    <p class="country-name">Italy: <span class="number">7,325</span></p>
+    <p class="country-month">July</p>
+  </div>
+  <div class="country-item italy august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-aug.svg" /></div>
+    <p class="country-name">Italy: <span class="number">7,745</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item italy september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-sep.svg" /></div>
+    <p class="country-name">Italy: <span class="number">9,565</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item italy october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/ita-oct.svg" /></div>
+    <p class="country-name">Italy: <span class="number">8,575</span></p>
+    <p class="country-month">October</p>
+  </div>
 </div>
 
 
