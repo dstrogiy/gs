@@ -108,25 +108,50 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">France: <span class="number">1,935</span></p>
     <p class="country-month">January</p>
   </div>
-  <div class="country-item germany february">
-    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
-    <p class="country-name">Germany: <span class="number">11,300</span></p>
+  <div class="country-item france february">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-feb.svg" /></div>
+    <p class="country-name">France: <span class="number">2,835</span></p>
     <p class="country-month">February</p>
   </div>
-  <div class="country-item hungary february">
-    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
-    <p class="country-name">Hungary: <span class="number">11,400</span></p>
-    <p class="country-month">February</p>
-  </div>
-  <div class="country-item italy march">
-    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
-    <p class="country-name">Italy: <span class="number">4,400</span></p>
+  <div class="country-item france march">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-mar.svg" /></div>
+    <p class="country-name">France: <span class="number">2,695</span></p>
     <p class="country-month">March</p>
   </div>
-  <div class="country-item sweden july">
-    <div class="svg"><img src="http://rvabiking.com/wp-content/themes/gistrat/library/images/svg/aus-jan.svg" /></div>
-    <p class="country-name">Sweden: <span class="number">1,400</span></p>
+  <div class="country-item france april">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-apr.svg" /></div>
+    <p class="country-name">France: <span class="number">1,920</span></p>
+    <p class="country-month">April</p>
+  </div>
+  <div class="country-item france may">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-may.svg" /></div>
+    <p class="country-name">France: <span class="number">2,145</span></p>
+    <p class="country-month">May</p>
+  </div>
+  <div class="country-item france june">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-jun.svg" /></div>
+    <p class="country-name">France: <span class="number">2,620</span></p>
+    <p class="country-month">June</p>
+  </div>
+  <div class="country-item france july">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-jul.svg" /></div>
+    <p class="country-name">France: <span class="number">2,640</span></p>
     <p class="country-month">July</p>
+  </div>
+  <div class="country-item france august">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-aug.svg" /></div>
+    <p class="country-name">France: <span class="number">4,010</span></p>
+    <p class="country-month">August</p>
+  </div>
+  <div class="country-item france september">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-sep.svg" /></div>
+    <p class="country-name">France: <span class="number">2,865</span></p>
+    <p class="country-month">September</p>
+  </div>
+  <div class="country-item france october">
+    <div class="svg"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/library/images/svg/fra-oct.svg" /></div>
+    <p class="country-name">France: <span class="number">4,090</span></p>
+    <p class="country-month">October</p>
   </div>
 </div>
 
