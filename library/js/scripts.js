@@ -53,6 +53,8 @@ var filters = {};
 
 $('.grid-control').on( 'click', '.checkbox', function() {
   var $this = $(this);
+  var thisFilter = $this.attr('data-filter');
+  var isAll = thisFilter === 'all';
 
   var group = $this.parents('.grid-control').attr('data-filter-group');
   // create array for filter group, if not there yet
@@ -61,12 +63,16 @@ $('.grid-control').on( 'click', '.checkbox', function() {
     filterGroup = filters[ group ] = [];
   }
 
+  if ( isAll ) {
+    delete filters[ group ];
+  }
+
   // index of
-  var index = $.inArray( $this.attr('data-filter'), filterGroup );
-  if ( index === -1 ) {
+  var index = $.inArray( thisFilter, filterGroup );
+  if ( !isAll && index === -1 ) {
     // add filter to group
-    filters[ group ].push( $this.attr('data-filter') );
-  } else {
+    filters[ group ].push( thisFilter );
+  } else if ( !isAll ) {
     filters[ group ].splice( index, 1 );
   }
 
