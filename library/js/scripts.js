@@ -97,6 +97,7 @@ $('.grid-control').on( 'click', '.checkbox', function() {
   }
 });
 
+
 $('.sort-name, .sort-size, .sort-month').click(function(e) {
   var sortValue = $(this).attr('data-sort-value');
   var isReversed = $(this).hasClass('sort-reverse');

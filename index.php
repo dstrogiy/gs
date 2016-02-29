@@ -28,8 +28,8 @@ get_template_part( 'library/templates/the-header' );
   <span class="checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
 
   <div class="filter-area">
-    <span class="filter sort-name" data-sort-value="name"><em>Filter by alphabet</em> <i class="fa fa-caret-down"></i></span>
-    <span class="filter sort-size" data-sort-value="size"><em>Filter by size</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-name" data-sort-value="name"><em>Sort by alphabet</em> <i class="fa fa-caret-down"></i></span>
+    <span class="filter sort-size" data-sort-value="size"><em>Sort by size</em> <i class="fa fa-caret-up"></i></span>
   </div>
 </div>
 
@@ -47,7 +47,7 @@ get_template_part( 'library/templates/the-header' );
   <span class="checkbox" data-filter=".october">October <em class="check"></em></span>
 
   <div class="filter-area">
-    <span class="filter filter-select-all"><em>Select all</em> <div class="checkbox" data-filter="all"></div></span>
+    <span class="filter filter-select-all" data-filter="all"><em>Select all</em> <div class="filter-checkbox"></div></span>
     <span class="filter sort-month" data-sort-value="month"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
   </div>
 </div>
@@ -353,6 +353,11 @@ get_template_part( 'library/templates/the-header' );
     <p class="country-name">Sweden: <span class="number">36,455</span></p>
     <p class="country-month">October</p>
   </div>
+</div>
+
+<div class="footnotes">
+  <p><strong><span>Abbreviations:</span></strong> <strong>Kosovo:</strong> Kosovo (under United Nations Security Council Resolution 1244/99) &nbsp; <strong>Macedonia:</strong> Former Yugoslav Republic of Macedonia &nbsp;  <strong>China:</strong> China (including Hong Kong) &nbsp;   <strong>DRC:</strong> Democratic Republic of the Congo</p>
+  <p><strong>Source:</strong> Eurostat  &nbsp; <strong>Extracted on:</strong> 01/26/2016  &nbsp; <strong>Last updated:</strong> 01/26/2016</p>
 </div>
 
 

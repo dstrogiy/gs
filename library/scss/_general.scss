@@ -32,13 +32,16 @@ h4 {
 
 
 .countries-control {
-  @include breakpoint(800px) {
-    @include span(first 4.5 of 12);
-  }
   position: relative;
+  margin-bottom: 40px;
+
+  @include breakpoint(1000px) {
+    @include span(first 4.5 of 12);
+    margin-bottom: 0;
+  }
 
   &:after {
-    display: block;
+    display: none;
     width: 1px;
     position: absolute;
     top: 62px;
@@ -46,16 +49,25 @@ h4 {
     background: #eee;
     content: '';
     height: 190px;
+
+    @include breakpoint(1000px) {
+      display: block;
+    }
   }
 }
 
 .months-control {
-  @include breakpoint(800px) {
-  @include span(last 7.5 of 12);
+  @include breakpoint(1000px) {
+    @include span(last 7.5 of 12);
   }
 }
 
 .grid-control {
+  padding: 0 20px;
+
+  @include breakpoint(1060px) {
+    padding: 0;
+  }
 
   .control-title {
     font-size: 18px;
@@ -113,6 +125,7 @@ h4 {
       }
 
       i {
+        transition: transform 0.2s linear;
         color: #d6d6d6;  
       }
 
@@ -150,6 +163,7 @@ h4 {
         background: #f8f8f8;
         border-radius: 10px;
         border: 1px solid #e6e6e6;
+        transition: background 0.2s linear;
 
         .toggle-switch {
           height: 16px;
@@ -157,6 +171,7 @@ h4 {
           border-radius: 100%;
           background: #fff;
           box-shadow: 2px 3px 2px -2px rgba(0,0,0,0.4);
+          transition: margin 0.2s linear;
         }
       }
 
@@ -167,6 +182,19 @@ h4 {
         .filter-checkbox {
           background: $blue;
           box-shadow: inset 0 0 0 3px #fff;
+        }
+      }
+
+      &.sort-reverse {
+        i {
+          transform: rotate(180deg);
+        }
+        .toggle {
+          background: $blue;
+
+          .toggle-switch {
+            margin-left: 16px;
+          }
         }
       }
     }
@@ -180,7 +208,11 @@ h4 {
   .country-item {
     width: 100%;
 
-    @include breakpoint(800px) {
+    @include breakpoint(740px) {
+      width: 50%;
+    }
+
+    @include breakpoint(960px) {
       width: 33.3%;
     }
 
@@ -214,6 +246,18 @@ h4 {
       color: #c1c1c1;
       font-size: 14px;
     }
+  }
+}
+
+.footnotes {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+
+  span {
+    color: $blue;
   }
 }
 
