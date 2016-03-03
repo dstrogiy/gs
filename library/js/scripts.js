@@ -62,10 +62,13 @@ var $grid = $('.country-grid').isotope({
 // store filter for each group
 var filters = {};
 
-$('.grid-control').on( 'click', '.checkbox', function() {
+$('.grid-control').on( 'click', '.input', function() {
   var $this = $(this);
   var thisFilter = $this.attr('data-filter');
-  var isAll = thisFilter === 'all';
+  var isAll = thisFilter === 'everything';
+
+  var countryFilter = $this.parents('.grid-control').attr('data-filter-group');
+  var isCountry = countryFilter === 'country';
 
   var group = $this.parents('.grid-control').attr('data-filter-group');
   // create array for filter group, if not there yet
@@ -87,15 +90,21 @@ $('.grid-control').on( 'click', '.checkbox', function() {
     filters[ group ].splice( index, 1 );
   }
 
-  
   var comboFilter = getComboFilter( filters );
 
   $grid.isotope({ filter: comboFilter });
   $this.toggleClass('is-checked');
+
   if ( isAll ) {
-    $this.parents('.grid-control').children().addClass('is-checked');
+    $this.parents('.grid-control').children().removeClass('is-checked');
+  }
+  if ( !isAll  &&  !isCountry ) {
+    $('.filter-select-all').removeClass('is-checked');
   }
 });
+
+
+
 
 
 $('.sort-name, .sort-size, .sort-month').click(function(e) {

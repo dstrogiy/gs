@@ -20,12 +20,12 @@ get_template_part( 'library/templates/the-header' );
 
 <div class="grid-control countries-control" data-filter-group="country">
   <p class="control-title"><strong>Countries</strong></p>
-  <span class="checkbox" data-filter=".austria">Austria <em class="check"></em></span>
-  <span class="checkbox" data-filter=".france">France <em class="check"></em></span>
-  <span class="checkbox" data-filter=".germany">Germany <em class="check"></em></span>
-  <span class="checkbox" data-filter=".hungary">Hungary <em class="check"></em></span>
-  <span class="checkbox" data-filter=".italy">Italy <em class="check"></em></span>
-  <span class="checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".austria">Austria <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".france">France <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".germany">Germany <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".hungary">Hungary <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".italy">Italy <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".sweden">Sweden <em class="check"></em></span>
 
   <div class="filter-area">
     <span class="filter sort-name" data-sort-value="name"><em>Sort by alphabet</em> <i class="fa fa-caret-down"></i></span>
@@ -35,19 +35,19 @@ get_template_part( 'library/templates/the-header' );
 
 <div class="grid-control months-control" data-filter-group="month">
   <p class="control-title"><strong>Months</strong></p>
-  <span class="checkbox" data-filter=".january">January <em class="check"></em></span>
-  <span class="checkbox" data-filter=".february">February <em class="check"></em></span>
-  <span class="checkbox" data-filter=".march">March <em class="check"></em></span>
-  <span class="checkbox" data-filter=".april">April <em class="check"></em></span>
-  <span class="checkbox" data-filter=".may">May <em class="check"></em></span>
-  <span class="checkbox" data-filter=".june">June <em class="check"></em></span>
-  <span class="checkbox" data-filter=".july">July <em class="check"></em></span>
-  <span class="checkbox" data-filter=".august">August <em class="check"></em></span>
-  <span class="checkbox" data-filter=".september">September <em class="check"></em></span>
-  <span class="checkbox" data-filter=".october">October <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".january">January <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".february">February <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".march">March <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".april">April <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".may">May <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".june">June <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".july">July <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".august">August <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".september">September <em class="check"></em></span>
+  <span class="input checkbox" data-filter=".october">October <em class="check"></em></span>
 
   <div class="filter-area">
-    <span class="filter filter-select-all" data-filter="all"><em>Select all</em> <div class="filter-checkbox"></div></span>
+    <span class="filter input filter-select-all" data-filter="everything"><em>Select all</em> <div class="filter-checkbox"></div></span>
     <span class="filter sort-month" data-sort-value="month"><em>Organize by month</em> <div class="toggle"><div class="toggle-switch"></div></div> </span>
   </div>
 </div>
