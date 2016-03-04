@@ -8,11 +8,7 @@
 
 get_template_part( 'library/templates/the-header' );
 
-  if ( ! have_posts() ) :
-    get_template_part( 'library/templates/not-found' );
-  endif;
-
-  while ( have_posts() ) : the_post(); ?>
+?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -366,8 +362,6 @@ get_template_part( 'library/templates/the-header' );
 
 
 
-</article> <?php // end article ?>
-
-  <?php endwhile; ?>
+</article>
 
 <?php get_template_part( 'library/templates/the-footer' );

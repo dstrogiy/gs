@@ -67,6 +67,9 @@ $('.grid-control').on( 'click', '.input', function() {
   var thisFilter = $this.attr('data-filter');
   var isAll = thisFilter === 'everything';
 
+  var thisSort = $this.attr('data-sort-value');
+  var byMonth = thisSort === 'month';
+
   var countryFilter = $this.parents('.grid-control').attr('data-filter-group');
   var isCountry = countryFilter === 'country';
 
@@ -91,6 +94,10 @@ $('.grid-control').on( 'click', '.input', function() {
   }
 
   var comboFilter = getComboFilter( filters );
+
+  if ( byMonth ) {
+    //
+  } 
 
   $grid.isotope({ filter: comboFilter });
   $this.toggleClass('is-checked');

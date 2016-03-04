@@ -20,6 +20,5 @@ grunt dev
 grunt build
 ```
 
-![dance](http://i.imgur.com/YuP1ruw.gif)
-
-###### shoudouts to [bones](https://github.com/eddiemachado/bones) for the ~inspiration~ 
+## Gistrat Code
+*Everything is in index.php*
