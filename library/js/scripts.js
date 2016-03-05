@@ -1,65 +1,6 @@
-/*
- * Author: VCUarts
- *
- * javascripting all the things
-*/
-
-
-/*
- * Get Viewport Dimensions
- * returns object with viewport dimensions to match css in width and height properties
- * ( source: http://andylangton.co.uk/blog/development/get-viewport-size-width-and-height-javascript )
-*/
-function updateViewportDimensions() {
-	var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
-	return { width:x,height:y };
-}
-// setting the viewport width
-var viewport = updateViewportDimensions();
-
-
-/*
- * Throttle Resize-triggered Events
- * Wrap your actions in this function to throttle the frequency of firing them off, for better performance, esp. on mobile.
- * ( source: http://stackoverflow.com/questions/2854407/javascript-jquery-window-resize-how-to-fire-after-the-resize-is-completed )
-*/
-var waitForFinalEvent = (function () {
-	var timers = {};
-	return function (callback, ms, uniqueId) {
-		if (!uniqueId) { uniqueId = "Don't call this twice without a uniqueId"; }
-		if (timers[uniqueId]) { clearTimeout (timers[uniqueId]); }
-		timers[uniqueId] = setTimeout(callback, ms);
-	};
-})();
-
-// how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
-var timeToWaitForLast = 100;
-
-
-/*
- * Put all your regular jQuery in here.
-*/
 jQuery(document).ready(function($) {
 
-
-
-// init Isotope
-// var $grid = $('.country-grid').isotope({
-//   itemSelector: '.country-item',
-//   getSortData: {
-//     name: function( itemElem ) {
-//       var name = $('.country-name', itemElem).text();
-//       return name.replace(/[^a-zA-Z]+/g, '');
-//     },
-//     size: function( itemElem ) {
-//       var size = $('.number', itemElem).text();
-//       return Number(size.replace(/[^\d\.\-]/g, ""));
-//     },
-//     month: '.country-month'
-//   }
-// });
-
-// init again
+// Init isotope
 var $grid = $('.country-grid, .month-item').isotope({
   itemSelector: '.country-item',
   getSortData: {
@@ -83,13 +24,11 @@ $('.grid-control').on( 'click', '.input', function() {
   var thisFilter = $this.attr('data-filter');
   var isAll = thisFilter === 'everything';
 
-  var thisSort = $this.attr('data-sort-value');
-  //var byMonth = thisSort === 'month';
-
   var countryFilter = $this.parents('.grid-control').attr('data-filter-group');
   var isCountry = countryFilter === 'country';
 
   var group = $this.parents('.grid-control').attr('data-filter-group');
+
   // create array for filter group, if not there yet
   var filterGroup = filters[ group ];
   if ( !filterGroup ) {
@@ -112,6 +51,7 @@ $('.grid-control').on( 'click', '.input', function() {
   var comboFilter = getComboFilter( filters );
 
   $grid.isotope({ filter: comboFilter });
+
   $this.toggleClass('is-checked');
 
   if ( isAll ) {
@@ -132,10 +72,12 @@ $('.sort-name, .sort-size, .sort-month').click(function(e) {
 
 //sort by month button specifics
 $('.sort-month').click(function(e) {
-  $('.country-grid').slideToggle();
-  $('.month-grid').slideToggle();
+   $('.country-grid').fadeToggle();
+   $('.month-grid').fadeToggle();
   $grid.isotope();
 });
+
+
 
 //combo filter function
 function getComboFilter( filters ) {
