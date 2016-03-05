@@ -17,18 +17,7 @@ body {
 }
 
 
-
 $blue: #0d92ff;
-
-h4 {
-  color: $blue;
-  font-famly: "Akzidenz Grotesk";
-  font-weight: 700;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-
 
 
 .countries-control {
@@ -201,55 +190,96 @@ h4 {
   }
 }
 
+//country grid
 .country-grid {
   clear: both;
   padding-top: 60px;
+}
 
-  .country-item {
-    width: 100%;
+//sort by month grid
+.month-grid {
+  display: none;
+  clear: both;
+  //padding-top: 40px;
+}
 
-    @include breakpoint(740px) {
-      width: 50%;
-    }
+.month-item {
+  top: 60px;
+  padding-bottom: 60px;
+}
 
-    @include breakpoint(960px) {
-      width: 33.3%;
-    }
+//country container inside month-item
+.cc {
+  position: relative;
+  padding: 60px 0;
+}
 
-    text-align: center;
-    margin-bottom: 40px;
+h4 {
+  color: $blue;
+  font-famly: "Akzidenz Grotesk", "proxima-nova";
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 40px;
 
-    .svg {
-      img {
-        width: 100%;
-        height: 240px;
+  span {
+    color: #00325b;
+    border:1px solid #eee;
+    border-radius: 2px;
+    padding: 3px 5px;
+    margin-left: 5px;
+  }
+}
 
-        @include breakpoint(800px) {
-          height: 180px;
-        }
+.country-item {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
 
-        display: block;
+  @include breakpoint(740px) {
+    width: 50%;
+  }
+
+  @include breakpoint(960px) {
+    width: 33.3%;
+  }
+
+  .svg {
+    img {
+      width: 100%;
+      height: 240px;
+
+      @include breakpoint(800px) {
+        height: 180px;
       }
-    }
-    .country-name {
-      margin-top: 20px;
-      font-weight: bold;
 
-      span {
-        color: $blue;
-      }
+      display: block;
     }
-    .country-month {
-      margin-top: -15px;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #c1c1c1;
-      font-size: 14px;
+  }
+
+  .country-name {
+    margin-top: 20px;
+    font-weight: bold;
+
+    span {
+      color: $blue;
     }
+  }
+
+  .country-month {
+    margin-top: -15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c1c1c1;
+    font-size: 14px;
   }
 }
 
 .footnotes {
+  clear: both;
   font-size: 0.8em;
   color: #555;
   margin-bottom: 40px;

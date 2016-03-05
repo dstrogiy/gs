@@ -44,7 +44,23 @@ jQuery(document).ready(function($) {
 
 
 // init Isotope
-var $grid = $('.country-grid').isotope({
+// var $grid = $('.country-grid').isotope({
+//   itemSelector: '.country-item',
+//   getSortData: {
+//     name: function( itemElem ) {
+//       var name = $('.country-name', itemElem).text();
+//       return name.replace(/[^a-zA-Z]+/g, '');
+//     },
+//     size: function( itemElem ) {
+//       var size = $('.number', itemElem).text();
+//       return Number(size.replace(/[^\d\.\-]/g, ""));
+//     },
+//     month: '.country-month'
+//   }
+// });
+
+// init again
+var $grid = $('.country-grid, .month-item').isotope({
   itemSelector: '.country-item',
   getSortData: {
     name: function( itemElem ) {
@@ -68,7 +84,7 @@ $('.grid-control').on( 'click', '.input', function() {
   var isAll = thisFilter === 'everything';
 
   var thisSort = $this.attr('data-sort-value');
-  var byMonth = thisSort === 'month';
+  //var byMonth = thisSort === 'month';
 
   var countryFilter = $this.parents('.grid-control').attr('data-filter-group');
   var isCountry = countryFilter === 'country';
@@ -95,10 +111,6 @@ $('.grid-control').on( 'click', '.input', function() {
 
   var comboFilter = getComboFilter( filters );
 
-  if ( byMonth ) {
-    //
-  } 
-
   $grid.isotope({ filter: comboFilter });
   $this.toggleClass('is-checked');
 
@@ -110,10 +122,7 @@ $('.grid-control').on( 'click', '.input', function() {
   }
 });
 
-
-
-
-
+//all sort buttons
 $('.sort-name, .sort-size, .sort-month').click(function(e) {
   var sortValue = $(this).attr('data-sort-value');
   var isReversed = $(this).hasClass('sort-reverse');
@@ -121,7 +130,14 @@ $('.sort-name, .sort-size, .sort-month').click(function(e) {
   $(this).toggleClass('sort-reverse');
 });
 
+//sort by month button specifics
+$('.sort-month').click(function(e) {
+  $('.country-grid').slideToggle();
+  $('.month-grid').slideToggle();
+  $grid.isotope();
+});
 
+//combo filter function
 function getComboFilter( filters ) {
   var i = 0;
   var comboFilters = [];
