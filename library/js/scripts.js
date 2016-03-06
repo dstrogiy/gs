@@ -51,7 +51,6 @@ $('.grid-control').on( 'click', '.input', function() {
   var comboFilter = getComboFilter( filters );
 
   $grid.isotope({ filter: comboFilter });
-
   $this.toggleClass('is-checked');
 
   if ( isAll ) {
@@ -60,6 +59,25 @@ $('.grid-control').on( 'click', '.input', function() {
   if ( !isAll  &&  !isCountry ) {
     $('.filter-select-all').removeClass('is-checked');
   }
+
+  //hide inactive months
+  var $months = $('.month-item');
+  $months.each( function( i, month ) {
+    var $month = $( month );
+    var $newsList = $month.isotope({
+      filter: comboFilter
+    });
+
+    var iso = $newsList.data('isotope');
+    if ( iso.filteredItems.length ) {
+      $month.show();
+    } else {
+      $month.hide();
+    }
+  });
+
+  $grid.isotope();
+
 });
 
 //all sort buttons
@@ -76,7 +94,6 @@ $('.sort-month').click(function(e) {
    $('.month-grid').fadeToggle();
   $grid.isotope();
 });
-
 
 
 //combo filter function
