@@ -1,24 +1,17 @@
 /*********************
-GENERAL STYLESHEET
+MIGRATION FLOW STYLES
 *********************/
 
-body {
-  color: #00325b;
-  font-family: "proxima-nova";
+$blue: #0d92ff;
+
+.flow-container {
+  overflow: hidden !important;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "proxima-nova", "Proxima Nova", sans-serif;
 }
-
-.inner-content, .inner-footer, .inner-header {
-  @include container($wrapper-width);
-  @include clearfix;
-}
-
-
-$blue: #0d92ff;
-
 
 .countries-control {
   position: relative;
@@ -152,7 +145,7 @@ $blue: #0d92ff;
         background: #f8f8f8;
         border-radius: 10px;
         border: 1px solid #e6e6e6;
-        transition: background 0.2s linear;
+        transition: background 0.2s linear, border 0.2s linear;
 
         .toggle-switch {
           height: 16px;
@@ -180,6 +173,7 @@ $blue: #0d92ff;
         }
         .toggle {
           background: $blue;
+          border-color: $blue;
 
           .toggle-switch {
             margin-left: 16px;
@@ -215,7 +209,7 @@ $blue: #0d92ff;
   padding: 60px 0;
 }
 
-h4 {
+h4.month-title {
   color: $blue;
   font-famly: "Akzidenz Grotesk", "proxima-nova";
   font-weight: 700;
@@ -223,8 +217,11 @@ h4 {
   text-transform: uppercase;
   display: block;
   margin-top: 20px;
-  // border-top: 1px solid #eee;
-  //padding-top: 40px;
+  padding: 0 20px;
+
+  @include breakpoint(1060px) {
+    padding: 0;
+  }
 
   span {
     color: #00325b;
@@ -281,6 +278,11 @@ h4 {
 
 .footnotes {
   clear: both;
+  font-family: "proxima-nova", "Proxima Nova", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
   font-size: 0.8em;
   color: #555;
   margin-bottom: 40px;
@@ -290,4 +292,3 @@ h4 {
     color: $blue;
   }
 }
-

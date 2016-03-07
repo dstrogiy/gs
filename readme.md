@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/VCUarts/VCUarts-bones.svg?branch=build)](https://travis-ci.org/VCUarts/VCUarts-bones)
-
 ## Getting Started
 ```bash
 npm install
@@ -21,4 +19,7 @@ grunt build
 ```
 
 ## Gistrat Code
-*Everything is in index.php*
+HTML source code is in index.php
+Stylesheet is in library/scss/general.scss
+JS is library/js/scripts.js
+Using Isotope v2.2.2
